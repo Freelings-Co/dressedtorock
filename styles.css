@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+body {
+    position: relative;
+}
+
+#hero {
+    background-color: red;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 22em;
+    background-image: url(./assets/src/imagens/banner.webp);
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero button {
+    text-transform: uppercase;
+    font-family: 'Rowdies';
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 1.3em;
+    text-shadow: 2px 3px 8px black;
+    background-image: linear-gradient(to right bottom, #051937, #002768, #273199, #5e30c6, #9e12eb);
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.box-text {
+    z-index: 1;
+}
+
+.box-text p {
+    font-family: 'Rowdies';
+    text-shadow: 2px 3px 8px black;
+    max-width: 70%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+.box-text h2 {
+    font-family: 'New Rocker';
+    letter-spacing: 2px;
+    color: #c634ff;
+    text-shadow: 2px 3px 8px black;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+#products {
+
+    position: relative;
+    padding: 30px 15px;
+}
+
+#grid-items h4 {
+    
+    text-shadow: 2px 3px 7px black;
+}
+
+#grid-items p {
+    color: #c634ff;
+    text-shadow: 2px 3px 10px black;
+}
+
+#grid-items button {
+    letter-spacing: 1px;
+    text-shadow: 2px 3px 10px black;
+}
+
+#socialButton{
+   letter-spacing: 1px;
+    text-shadow: 2px 3px 8px black;
+    background-image: linear-gradient(to right bottom, #051937, #002768, #273199, #5e30c6, #9e12eb);
+}

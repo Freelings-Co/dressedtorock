@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DressedToRock - Vista-se para o Rock!</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     <script>
         tailwind.config = {
             theme: {
@@ -74,9 +75,12 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="bg-[url('/api/placeholder/1600/900')] bg-cover bg-center py-20 px-6 text-center">
-        <h2 class="text-5xl font-bold mb-4 text-rock-purple drop-shadow-lg">Vista-se para o Rock!</h2>
-        <p class="text-xl mb-8">Encontre as melhores camisetas e acessórios de rock aqui</p>
+    <section id="hero">
+        <div class="mask"></div>
+        <div class="box-text">
+            <h2 class="text-5xl font-bold mb-4 text-rock-purple drop-shadow-lg">Vista-se para o Rock!</h2>
+            <p class="text-xl mb-8" id="text-hero">Encontre as melhores camisetas e acessórios de rock aqui</p>
+        </div>
         <button
             class="bg-rock-purple hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105">
             Compre agora
@@ -84,9 +88,9 @@
     </section>
 
     <!-- Featured Products -->
-    <section class="py-16 px-6">
+    <section id="products">
         <h3 class="text-3xl font-bold mb-8 text-center">Produtos em Destaque</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="grid-items">
             <!-- Product 1 -->
             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition hover:scale-105">
                 <img src="./assets/src/imagens/vestuario1.jpg" alt="Camiseta AC/DC" class="w-full h-64 object-cover">
@@ -128,7 +132,7 @@
                 <img src="./assets/src/imagens/vestuario4.webp" alt="Bandana Guns N' Roses"
                     class="w-full h-64 object-cover">
                 <div class="p-4">
-                    <h4 class="text-xl font-bold mb-2">Bands</h4>
+                    <h4 class="text-xl font-bold mb-2">Scholl of Rock</h4>
                     <p class="text-rock-purple font-bold mb-4">R$ 29,99</p>
                     <button
                         class="bg-rock-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full w-full transition">
@@ -140,7 +144,7 @@
                 <img src="./assets/src/imagens/manequim1.jpg" alt="Bandana Guns N' Roses"
                     class="w-full h-64 object-cover">
                 <div class="p-4">
-                    <h4 class="text-xl font-bold mb-2">Bands</h4>
+                    <h4 class="text-xl font-bold mb-2">Kid Rock</h4>
                     <p class="text-rock-purple font-bold mb-4">R$ 29,99</p>
                     <button
                         class="bg-rock-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full w-full transition">
@@ -153,7 +157,7 @@
                 <img src="./assets/src/imagens/manequim2.jpg" alt="Bandana Guns N' Roses"
                     class="w-full h-64 object-cover">
                 <div class="p-4">
-                    <h4 class="text-xl font-bold mb-2">Bands</h4>
+                    <h4 class="text-xl font-bold mb-2">Pink Floyd</h4>
                     <p class="text-rock-purple font-bold mb-4">R$ 29,99</p>
                     <button
                         class="bg-rock-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full w-full transition">
@@ -166,7 +170,7 @@
                 <img src="./assets/src/imagens/manequim3.jpg" alt="Bandana Guns N' Roses"
                     class="w-full h-64 object-cover">
                 <div class="p-4">
-                    <h4 class="text-xl font-bold mb-2">Bands</h4>
+                    <h4 class="text-xl font-bold mb-2">Nirvana</h4>
                     <p class="text-rock-purple font-bold mb-4">R$ 29,99</p>
                     <button
                         class="bg-rock-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full w-full transition">
@@ -179,7 +183,7 @@
                 <img src="./assets/src/imagens/manequim4.webp" alt="Bandana Guns N' Roses"
                     class="w-full h-64 object-cover">
                 <div class="p-4">
-                    <h4 class="text-xl font-bold mb-2">Bands</h4>
+                    <h4 class="text-xl font-bold mb-2">Simple Rock</h4>
                     <p class="text-rock-purple font-bold mb-4">R$ 29,99</p>
                     <button
                         class="bg-rock-purple hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full w-full transition">
@@ -233,7 +237,10 @@
                 </div>
             </div>
         </div>
-        <p class="text-center mt-8">&copy; 2024 DressedToRock. Todos os direitos reservados.</p>
+
+        <a href="https://www.freelings.com.br" target="_blank">
+            <p class="text-center mt-8">&copy; 2024 Freelings. Todos os direitos reservados.</p>
+        </a>
     </footer>
 
     <script>
